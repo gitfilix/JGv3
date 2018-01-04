@@ -1,0 +1,537 @@
+/* CSS Document */
+/*font-family: 'Rajdhani', sans-serif;
+font-family: 'Exo 2', sans-serif;
+font-family: 'Julius Sans One', sans-serif;*/
+
+/* =Typography
+-----------------------------------------------------------------*/
+
+.global{
+    font-family: 'Exo 2', sans-serif;
+    color: #999;
+    line-height: 2.8rem;
+}
+
+.gray-1 {
+    background: #D3D3D3;
+}
+
+.blue{
+    color: #68b8de;
+}
+
+.transparentbg {
+    max-width: 100%;
+    background: rgba(35, 35, 35, 0.3);
+}
+
+
+/* Logo styles ------------------------------------------------*/
+/*-------------------------------------------------------------*/
+
+.logo{
+    margin-left: 4rem;
+}
+
+.logo img {
+    max-width: 75px;
+	vertical-align: inherit;
+}
+
+.logo h3{
+	font-size: 1.2rem;
+	color: #888;
+}
+
+.logo h3:hover{
+	color: #68b8de;
+	transition: all 0.2s ease-out;
+}
+
+
+.supertitle {
+    font-family: 'Julius Sans One';
+    color: #68b8de;
+    font-weight: 200;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    text-rendering: geometricPrecision;
+    text-shadow: 3px 3px #EdEdEd;
+    letter-spacing: 0.1rem;
+}
+
+
+/* SERVICE Nav styles -------------------------------------------*/
+/*---------------------------------------------------------------*/
+
+.servicenav {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 0.8rem;
+    float: right;
+	font-weight: 300;
+}
+
+.servicenav li {
+    display: inline;
+    padding-right: 1em;
+}
+
+.servicenav a {
+    -moz-transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+    color: #666;
+    text-decoration:none;
+}
+
+.servicenav a:hover {
+    color: #68b8de;
+    border-bottom: 1px solid #666;
+    -moz-transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+
+.servicenav a:visited {
+	color: #666;
+}
+
+.servicenav a:visited:hover {
+	color: #68b8de;
+}
+
+ /*active state*/
+.servicenav .active a{
+	color: #A33 !important;
+	border-bottom: #A33 1px solid;
+}
+
+
+/*2. Themen Navigation ------------------------------------------*/
+/*---------------------------------------------------------------*/
+
+.themennav {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 1.3rem;
+	font-weight: 300;
+	text-rendering: optimizeLegibility;
+}
+
+.themennav li {
+	display: inline;
+	list-style-type: none;
+	margin-right: 1rem;
+}
+
+.themennav li a {
+    color: #A3A3A3;
+	text-decoration: none;
+	-moz-transition: all 0.3s ease-in;
+	-webkit-transition: all  0.2s ease-in;
+	transition: all  0.3s ease-in;
+	padding-bottom: 0.7rem;
+	border-bottom: #FFF 1px solid;
+}
+
+.themennav li a:hover {
+	color: #68b8de;
+	border-bottom: #68b8de 1px solid;
+	padding-bottom: 0.3rem;
+	-moz-transition: all 0.3s ease-in;
+	-webkit-transition: all  0.3s ease-in;
+	transition: all  0.3s ease-in;
+}
+
+.themennav li:visited {
+    color: #A3A3A3;
+}
+
+
+
+/*4. SUB Navigation styles -----------------------------------------*/
+/*------------------------------------------------------------------*/
+
+.subnav {
+    float: left;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 1.1rem;
+	font-weight: 200;
+	text-rendering: optimizeLegibility;
+}
+
+
+.subnav li {
+	padding-right: 0.5rem;
+    display: inline;
+	list-style-type: none;
+}
+
+.subnav a {
+    text-decoration: none;
+	color:  #555;
+    -moz-transition: all 0.4s ease-in;
+    -webkit-transition: all  0.4s ease-in;
+    transition: all  0.4s ease-in;
+}
+
+
+.subnav  a:hover {
+	color: #68b8de;
+	-moz-transition: all 0.4s ease-in;
+	-webkit-transition: all  0.2s ease-in;
+	transition: all  0.2s ease-in;
+}
+
+
+.subnav a:visited{
+	color:#111;
+}
+
+.subnav a:hover:visited{
+	color: #68b8de;
+}
+
+
+.subnav .active a {
+	color: #0A0 !important;
+}
+
+
+
+/* 5. Content styles ------------------------------------------*/
+/*-------------------------------------------------------------*/
+
+.spacerow{
+	padding-bottom: 6rem;
+}
+
+
+
+.content {
+	padding-bottom: 1.5rem;
+	margin-bottom: 2rem;
+	border-bottom: 1px solid #c2c2c2;
+}
+
+.content header {
+	padding-bottom: 0.5rem;
+}
+
+.content p {
+    line-height: 1.8rem;
+    color: #222;
+}
+
+.content-text{
+	line-height: 1.8rem;
+}
+
+
+.content-caption {
+	background: #f9f9f9;
+    font-size: 1rem;
+    padding-left: 0.7rem;
+    line-height: 1.8rem;
+    border-left: 1px solid #AAA;
+}
+
+
+/* 5.1 Text variant 2 on the right ----------------------------*/
+/*-------------------------------------------------------------*/
+
+.textbox{
+	margin-right:1em;
+	padding-left:1em;
+	background:rgba(13, 13, 13, 0.2);
+	}
+
+.textbox h2{
+	color:#E9E9E9;
+	font-size:1.6em;
+	letter-spacing:0.1em;
+	font-weight:200;
+	}
+
+.textbox h3{
+	color:#444;
+	font-size:1em;
+	line-height:1.4em;
+	letter-spacing:0.1em;
+	font-weight:300;
+	}
+
+.textbox p{
+	padding-top:1em;
+	font-size:1em;
+	color:#222;
+	font-weight:300;
+	line-height:1.6em;
+	word-spacing:normal;
+	}
+
+.content_big img{
+	width:100%;
+	max-width:100%;
+	height: auto;
+	}
+
+
+
+/*5.2 Content Webform ------------------------------------------*/
+/*--------------------------------------------------------------*/
+
+
+input:focus {
+    outline: none;
+}
+
+.webform {
+	background:#e7e7e7;
+	border-bottom: 1px solid #999;
+	padding-bottom: 2em;
+	padding-left: 0;
+	font-family: 'Exo 2', sans-serif;
+	font-size:  1rem;
+	color:#333;
+}
+
+.webform h2 {
+	font-family: 'Exo 2', sans-serif;
+	font-size: 1rem;
+	}
+
+.webform li {
+	list-style-type: none;
+}
+
+.webform input{
+	font-family: 'Exo 2', sans-serif;
+	font-weight:200;
+	height: 2.4em;
+	width:60%;
+	margin:0;
+	border:#999 1px solid;
+	background:#F9F9F9;
+	color:#777;
+	border-radius: 3px;
+	}
+
+
+.webform input:focus{
+	background:#DDFFFD;
+	color:#111;
+	border:#111 1px solid;
+	-moz-transition:all 0.3s linear;
+	-webkit-transition:all  0.3s linear;
+	transition:all  0.3s linear;
+	}
+
+
+.webform textarea{
+	font-family: 'Exo 2', sans-serif;
+	font-weight:200;
+	width: 62%;
+	max-width:62%;
+	margin:0;
+	background:#F9F9F9;
+	display:block;
+	resize: none;
+  	overflow: auto;
+	color:#777;
+	border:#999 1px solid;
+	border-radius: 3px;
+	-moz-transition:all 0.3s linear;
+	-webkit-transition:all  0.3s linear;
+	transition:all  0.3s linear;
+	}
+
+.webform textarea:focus{
+	-moz-transition:all 0.3s linear;
+	-webkit-transition:all  0.3s linear;
+	transition:all  0.3s linear;
+	background: #DDFFFD;
+	color: #111;
+	border:#111 1px solid;
+	outline-width: 0;
+	outline: none;
+	-moz-appearance:none;
+	-webkit-appearance:none;
+	}
+
+.forms label{
+	padding-right: 1rem;
+	margin-bottom:1rem;
+	margin-top:2em;
+	font-weight: 300;
+	letter-spacing:0.1em;
+	}
+
+
+#submit-btn{
+	font-family: 'Exo 2', sans-serif;
+	background:#DDFFFD;
+	margin-top:4em;
+	width:62%;
+	border: #111 1px solid;
+	color:#777;
+	font-weight: 200;
+	letter-spacing:0.05em;
+	-moz-transition: all 0.2s linear;
+	-webkit-transition: all  0.2s linear;
+	transition: all 0.2s linear;
+	}
+
+#submit-btn:hover {
+	border: #2A74E5 1px solid;
+	color: #111;
+	background: #68b8de;
+	}
+
+
+/*5.3 flexslider Custom styles --------------------------------*/
+/*-------------------------------------------------------------*/
+
+/*
+.slide {
+	position: relative;
+}
+*/
+
+.headerpannelbox {
+	position: absolute;
+	top: 2.5rem;
+	left: 2.5rem;
+	background: rgba(35, 35, 35, 0.3);
+	width: 90%;
+	height: 24vh;
+	border-top: 1px solid #68b8de;
+}
+
+.headerpannelbox h3 {
+	font-family: "Julius Sans One", sans-serif;
+    font-weight: 200;
+    text-rendering: geometricPrecision;
+	color: #68b8de;
+    font-size: 4.4rem;
+    line-height: 5.2rem;
+	padding-top: 3rem;
+	padding-left: 3rem
+}
+
+.slidertext {
+	font-family: "Julius Sans One", sans-serif;
+	font-weight: 100 !important;
+	padding-top: 0;
+	padding-left: 3rem;
+	text-rendering: geometricPrecision;
+	font-size: 1.4rem;
+	line-height: 2.4rem;
+	color: #F3F3F3;
+}
+
+.headerpannelbox .button {
+	position: absolute;
+	bottom: 1rem;
+	right: 1rem;
+	padding: 0.2rem 1.5rem;
+	color: #F3F3F3;
+	border: 1px solid #FFF;
+	border-radius: 4px;
+	transition: all  0.4s ease-out;
+}
+
+.headerpannelbox .button:hover {
+	transition: all  0.3s ease-in;
+	color: #555;
+	background: #E3E3E3;
+}
+
+
+.button a {
+	color: #2FC7BB;
+}
+
+.button a:hover{
+	text-decoration: none;
+}
+
+
+/* overwrites*/
+
+.flexslider {
+	border: 0;
+	margin: 0;
+}
+
+/*hack*/
+/*
+.flexslider .slides img{
+	height: 400px;
+}
+*/
+
+
+/*
+.flex-direction-nav {*height: 0;}
+.flex-direction-nav a  { display: block; width: 40px; height: 40px; margin: -20px 0 0; position: absolute; top: 50%; z-index: 10; overflow: hidden; opacity: 0; cursor: pointer; color: rgba(0,0,0,0.8); text-shadow: 1px 1px 0 rgba(255,255,255,0.3); -webkit-transition: all .3s ease; -moz-transition: all .3s ease; transition: all .3s ease; }
+.flex-direction-nav .flex-prev { left: -50px; }
+.flex-direction-nav .flex-next { right: -50px; text-align: right; }
+.flexslider:hover .flex-prev { opacity: 0.7; left: 10px; }
+.flexslider:hover .flex-next { opacity: 0.7; right: 10px; }
+.flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover { opacity: 1; }
+.flex-direction-nav .flex-disabled { opacity: 0!important; filter:alpha(opacity=0); cursor: default; }
+*/
+/*
+.flex-direction-nav a:before  { font-family: "flexslider-icon"; font-size: 40px; display: inline-block; content: '\f001'; }
+.flex-direction-nav a.flex-next:before  { content: '\f002'; }
+*/
+
+
+/* Control Nav */
+/*
+
+.flex-control-nav {width: 100%; position: absolute; bottom: -40px; text-align: center;}
+.flex-control-nav {display:none !important;}
+.flex-control-nav li {margin: 0 6px; display: inline-block; zoom: 1; *display: inline;}
+.flex-control-paging li a {width: 11px; height: 11px; display: block; background: #666; background: rgba(0,0,0,0.5); cursor: pointer; text-indent: -9999px; -webkit-border-radius: 20px; -moz-border-radius: 20px; -o-border-radius: 20px; border-radius: 20px; -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.3); -moz-box-shadow: inset 0 0 3px rgba(0,0,0,0.3); -o-box-shadow: inset 0 0 3px rgba(0,0,0,0.3); box-shadow: inset 0 0 3px rgba(0,0,0,0.3); }
+.flex-control-paging li a:hover { background: #00f9fc; }
+.flex-control-paging li a.flex-active { background: #139a92; cursor: default; }
+
+*/
+
+
+
+/*6. Footer styles --------------------------------------------
+/*-------------------------------------------------------------*/
+
+
+.footer {
+    padding-top: 3rem;
+    border-top: 1px solid #999;
+    color: #555;
+    background: #DEDEDE;
+}
+
+
+/*6.1 Webkanal link styles --------------------------------------------*/
+.author {
+	font-size: 0.8rem;
+}
+
+.author a {
+    color: #00f9fc;
+    letter-spacing: 0;
+    text-decoration: none;
+    transition: all 0.2s linear, background 0.8s linear;
+}
+
+.author a:hover:after {
+    content: " >";
+}
+
+.author a:hover {
+    color: #FB9133;
+	background:#222;
+    letter-spacing: 0.3em;
+	transition: all 0.2s linear, background 0.8s linear;
+}
