@@ -1,11 +1,14 @@
 <cfoutput query="getcontent">
 		<cfinclude template="sidebars.cfm">
+
 	<article class="content">
 		<header>
 			<!--- Print a Title --->	
 			<cfif titel NEQ "">
+				content template 2
 				<h1 class="h2 supertitle">#titel#</h1>
-			</cfif>		
+			</cfif>
+			
 			<!---  PRint the lead --->
 			<cfif lead NEQ "">
 				 	<h2 class="h3">#lead#</h2>
@@ -45,7 +48,12 @@
 		<cfif HASCONTACT EQ 1>
 			<cfinclude template="contactform.cfm">
 		<cfelse>
-	<!---<cfdump var="#getcontent#">--->
+		<cfif PAGEID EQ 367	>
+			<cfinclude template="custom/twopictures.cfm">	
+		</cfif>
+			
+	<cfdump var="#getcontent#">
+		 
 	</article>
 	</cfif> 
 	<!--- include gallery, if there is one --->

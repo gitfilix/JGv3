@@ -138,7 +138,13 @@ WHERE	mandant = #session.mandant#
 <!-- Prompt IE 7 users to install Chrome Frame -->
 <!--[if lt IE 8]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 
-	<cfinclude template="inc/template1.cfm" />
+	<!---<cfinclude template="inc/template1.cfm" />--->
+	<!---load template 1 to 3--->
+	<cfoutput>
+		<cfdump var="#pageProperties#"></cfdump>
+	<cfinclude template="inc/template#pageProperties.template#.cfm" />
+	
+	</cfoutput>
 	<!-- Javascript - jQuery -->
 	<script src="http://code.jquery.com/jquery.min.js"></script>
 <!--
@@ -155,7 +161,7 @@ WHERE	mandant = #session.mandant#
 			crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" ></script>
 	<cfoutput>
-<!--		<script src='/#session.serverpath#/inc/yoxview/jquery.yoxview-2.21.min.js'></script>-->
+		<script src='/#session.serverpath#/inc/yoxview/jquery.yoxview-2.21.min.js'></script>
 		<script src="/#session.serverpath#/js/jquery.flexslider-min.js"></script>
 <!--
 		<script type="text/javascript" charset="utf-8">
