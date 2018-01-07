@@ -48,11 +48,21 @@
 		<cfif HASCONTACT EQ 1>
 			<cfinclude template="contactform.cfm">
 		<cfelse>
-		<cfif PAGEID EQ 367	>
-			<cfinclude template="custom/twopictures.cfm">	
+		<!---	kronen special--->
+		<cfif PAGEID EQ 362	>
+			<cfinclude template="custom/content_crown.cfm" >	
 		</cfif>
+		<!---bridge special --->
+		<cfif PAGEID EQ 363 >
+			<cfinclude template="custom/content_bridge.cfm" >	
+		</cfif>
+		<!---content protheses--->
+		<cfif PAGEID EQ 364>
+			<cfinclude template="custom/content_protheses.cfm">	
+		</cfif>
+		
 			
-	<cfdump var="#getcontent#">
+	<!---<cfdump var="#getcontent#">--->
 		 
 	</article>
 	</cfif> 

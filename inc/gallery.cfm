@@ -83,7 +83,6 @@ WHERE A.id = <cfif isdefined("getActivePage.albumid")>#getActivePage.albumid#<cf
 
 	</cfoutput></div>
 </cfif>
-
 <br/>
 <br/>
 </cfoutput>

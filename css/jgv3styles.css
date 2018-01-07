@@ -201,7 +201,7 @@ font-family: 'Julius Sans One', sans-serif;*/
 /* 5. Content styles ------------------------------------------*/
 /*-------------------------------------------------------------*/
 
-.spacerow{
+.spacerow {
 	padding-bottom: 6rem;
 }
 
@@ -222,7 +222,7 @@ font-family: 'Julius Sans One', sans-serif;*/
     color: #222;
 }
 
-.content-text{
+.content-text {
 	line-height: 1.8rem;
 }
 
@@ -239,41 +239,41 @@ font-family: 'Julius Sans One', sans-serif;*/
 /* 5.1 Text variant 2 on the right ----------------------------*/
 /*-------------------------------------------------------------*/
 
-.textbox{
+.textbox {
 	margin-right:1em;
 	padding-left:1em;
 	background:rgba(13, 13, 13, 0.2);
-	}
+}
 
-.textbox h2{
+.textbox h2 {
 	color:#E9E9E9;
 	font-size:1.6em;
 	letter-spacing:0.1em;
 	font-weight:200;
-	}
+}
 
-.textbox h3{
+.textbox h3 {
 	color:#444;
 	font-size:1em;
 	line-height:1.4em;
 	letter-spacing:0.1em;
 	font-weight:300;
-	}
+}
 
-.textbox p{
+.textbox p {
 	padding-top:1em;
 	font-size:1em;
 	color:#222;
 	font-weight:300;
 	line-height:1.6em;
 	word-spacing:normal;
-	}
+}
 
-.content_big img{
+.content_big img {
 	width:100%;
 	max-width:100%;
 	height: auto;
-	}
+}
 
 
 
@@ -314,20 +314,21 @@ input:focus {
 	background:#F9F9F9;
 	color:#777;
 	border-radius: 3px;
-	}
+}
 
 
-.webform input:focus{
+.webform input:focus {
 	background:#DDFFFD;
 	color:#111;
 	border:#111 1px solid;
 	-moz-transition:all 0.3s linear;
 	-webkit-transition:all  0.3s linear;
 	transition:all  0.3s linear;
-	}
+
+}
 
 
-.webform textarea{
+.webform textarea {
 	font-family: 'Exo 2', sans-serif;
 	font-weight:200;
 	width: 62%;
@@ -403,7 +404,7 @@ input:focus {
 	left: 2.5rem;
 	background: rgba(35, 35, 35, 0.3);
 	width: 90%;
-	height: 24vh;
+	height: 22vh;
 	border-top: 1px solid #68b8de;
 }
 
@@ -471,35 +472,30 @@ input:focus {
 */
 
 
-/*
-.flex-direction-nav {*height: 0;}
-.flex-direction-nav a  { display: block; width: 40px; height: 40px; margin: -20px 0 0; position: absolute; top: 50%; z-index: 10; overflow: hidden; opacity: 0; cursor: pointer; color: rgba(0,0,0,0.8); text-shadow: 1px 1px 0 rgba(255,255,255,0.3); -webkit-transition: all .3s ease; -moz-transition: all .3s ease; transition: all .3s ease; }
-.flex-direction-nav .flex-prev { left: -50px; }
-.flex-direction-nav .flex-next { right: -50px; text-align: right; }
-.flexslider:hover .flex-prev { opacity: 0.7; left: 10px; }
-.flexslider:hover .flex-next { opacity: 0.7; right: 10px; }
-.flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover { opacity: 1; }
-.flex-direction-nav .flex-disabled { opacity: 0!important; filter:alpha(opacity=0); cursor: default; }
-*/
-/*
-.flex-direction-nav a:before  { font-family: "flexslider-icon"; font-size: 40px; display: inline-block; content: '\f001'; }
-.flex-direction-nav a.flex-next:before  { content: '\f002'; }
-*/
 
 
-/* Control Nav */
-/*
+/*5.4. template 2 special (static) content styles ---------------
+/*-------------------------------------------------------------*/
 
-.flex-control-nav {width: 100%; position: absolute; bottom: -40px; text-align: center;}
-.flex-control-nav {display:none !important;}
-.flex-control-nav li {margin: 0 6px; display: inline-block; zoom: 1; *display: inline;}
-.flex-control-paging li a {width: 11px; height: 11px; display: block; background: #666; background: rgba(0,0,0,0.5); cursor: pointer; text-indent: -9999px; -webkit-border-radius: 20px; -moz-border-radius: 20px; -o-border-radius: 20px; border-radius: 20px; -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.3); -moz-box-shadow: inset 0 0 3px rgba(0,0,0,0.3); -o-box-shadow: inset 0 0 3px rgba(0,0,0,0.3); box-shadow: inset 0 0 3px rgba(0,0,0,0.3); }
-.flex-control-paging li a:hover { background: #00f9fc; }
-.flex-control-paging li a.flex-active { background: #139a92; cursor: default; }
-
-*/
+.specialcontent {
+	margin-top: 2rem;
+	margin-bottom: 3rem;
+}
 
 
+.specialcontent-pixbox h4 {
+	font-size: 1.3rem;
+	color: #1c94c5;
+}
+
+.specialcontent-textbox h3 {
+	font-size: 1.8rem;
+}
+
+
+.specialcontent-pixbox .content-caption {
+	max-width: 400px;
+}
 
 /*6. Footer styles --------------------------------------------
 /*-------------------------------------------------------------*/

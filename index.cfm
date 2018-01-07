@@ -128,7 +128,7 @@ WHERE	mandant = #session.mandant#
 	<cfoutput>
 	<link rel="stylesheet" href="/#session.serverpath#/js/FlexSlider/flexslider.css" type="text/css" />
 	<link rel="stylesheet" href="/#session.serverpath#/css/jgv3styles.css"  />
-
+	<link rel="stylesheet" href="/#session.serverpath#/css/mq-jgv3-styles.css"  />
 	</cfoutput>
 	<!--[if lt IE 9]>
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
