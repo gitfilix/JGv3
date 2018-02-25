@@ -44,21 +44,26 @@ $(document).ready(function() {
 
 
 });
+//
+//(function() { 
+//            if (Galleria) { $("body").text('Galleria works') }
+//}());
+//(function() { 
+//    Galleria.loadTheme("galleria/galleria.classic.min.js");
+//    Galleria.run('.galleria');
+//}());
 
-
-
-// Slider  	
-//	if (jQuery().flexslider) {
-//	   $('.flexslider').flexslider({
-//			smoothHeight: false, 
-//			controlNav: false,           
-//			directionNav: false, 
-//			animation: "fade",
-//			slideshowSpeed: 6000, 
-//			animationSpeed: 1200, 
-//			prevText: "&larr;",
-//			nextText: "&rarr;",
-//			selector: ".slides > .slide"
-//	    });
-//	};
-//    
+//(function(){
+//	Galleria.configure({
+//		transition: 'fadeslide',
+//		transitionSpeed: '600',
+//		autoplay: 5500,
+//		preload: 5,
+//		height: 0.5625,
+//		height: 800,
+//		easing: 'galleriaIn',
+//		pauseOnInteraction: false
+//	});
+//	Galleria.loadTheme('galleria/themes/classic/galleria.classic.js');
+//	Galleria.run('.galleria');
+//}());

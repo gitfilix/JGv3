@@ -22,9 +22,7 @@ WHERE A.id = <cfif isdefined("getActivePage.albumid")>#getActivePage.albumid#<cf
 <cfif albumdescription NEQ "">
 	<h4>#albumdescription#</h4>
 </cfif>
-	
-<cfdump var="#albumid#" ></cfdump>
-	
+
 <cfif isdefined("getActivePage.albumid")>
 	<cfset albumtype = getActivePage.albumtype />
 <cfelse>
@@ -35,10 +33,6 @@ WHERE A.id = <cfif isdefined("getActivePage.albumid")>#getActivePage.albumid#<cf
 
 <!--- thumbnail-liste --->
 <cfif albumtype EQ 1>
-	<cfoutput>
-	<img src="/#session.serverpath#/upload/galleries/#imagePath#" alt="hoi">
-	
-	</cfoutput>
 	<div class="yoxview">
 	<cfoutput>
 		<cfimage source="#expandPath('/' & session.serverpath & '/upload/galleries/' & imageThumbPath)#" name="myImage"> 
@@ -60,41 +54,7 @@ WHERE A.id = <cfif isdefined("getActivePage.albumid")>#getActivePage.albumid#<cf
 	</div>
 <!--- volles album --->
 <cfelse><div class="grid-wrap works yoxview" style="margin-left:0;">
-	
-	<h1>Galleria test</h1>
-	
 	<cfoutput>
-	<div class="galleria">
-		<img src="/#session.serverpath#/upload/galleries/#imageThumbPath#" 
-			 alt="#imageTitle#"
-			 style="height: 400px;">
-	
-	</div>
-		<script>
-			
-//			(function() { 
-//				Galleria.loadTheme('../../js/galleria/themes/classic/galleria.classic.js');
-//				Galleria.run('.galleria');
-//			}());
-
-			(function(){
-			Galleria.configure({
-				transition: 'fadeslide',
-				transitionSpeed: '600',
-				autoplay: 2500,
-//				preload: 1,
-				height: 400,
-				easing: 'galleriaIn',
-				pauseOnInteraction: false
-			});
-				
-				
-	        Galleria.loadTheme('../../js/galleria/themes/classic/galleria.classic.js');
-	        Galleria.run('.galleria');
-	    }());
-		</script>
-	</cfoutput>
-	<!---<cfoutput>
 	<cfimage source="#expandPath('/' & session.serverpath & '/upload/galleries/' & imageThumbPath)#" name="myImage"> 
 	<cfset bildbreite = ImageGetWidth(myImage) />
 	<cfset bildhoehe = ImageGetHeight(myImage) />
@@ -121,12 +81,12 @@ WHERE A.id = <cfif isdefined("getActivePage.albumid")>#getActivePage.albumid#<cf
 
 	
 
-	</cfoutput>--->
-	</div>
+	</cfoutput></div>
 </cfif>
 <br/>
 <br/>
 </cfoutput>
+
 
 </cfif>
 

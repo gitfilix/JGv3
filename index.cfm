@@ -129,31 +129,30 @@ WHERE	mandant = #session.mandant#
 	<link rel="stylesheet" href="/#session.serverpath#/js/FlexSlider/flexslider.css" type="text/css" />
 	<link rel="stylesheet" href="/#session.serverpath#/css/jgv3styles.css"  />
 	<link rel="stylesheet" href="/#session.serverpath#/css/mq-jgv3-styles.css"  />
+	<link rel="stylesheet" href="/#session.serverpath#/js/galleria/themes/classic/galleria.classic.css" />
+<!---		not minified --->
+	<!--- Javascript - jQuery --->
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+
+	<script>window.jQuery || document.write('<//script src="js/jquery-1.7.2.min.js"><\/script>')</script>
+	<script src="/#session.serverpath#/js/galleria/galleria-1.5.7.js"></script>
 	</cfoutput>
-	<!--[if lt IE 9]>
+	<!---[if lt IE 9]>
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
+	<![endif]--->
+	
 </head>
 <body>
-<!-- Prompt IE 7 users to install Chrome Frame -->
+<!--- Prompt IE 7 users to install Chrome Frame --->
 <!--[if lt IE 8]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 
 	<!---<cfinclude template="inc/template1.cfm" />--->
 	<!---load template 1 to 3--->
 	<cfoutput>
-		<cfdump var="#pageProperties#"></cfdump>
+		<!---<cfdump var="#pageProperties#"></cfdump>--->
 	<cfinclude template="inc/template#pageProperties.template#.cfm" />
 	
 	</cfoutput>
-	<!-- Javascript - jQuery -->
-	<script src="http://code.jquery.com/jquery.min.js"></script>
-<!--
-	<script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
--->
-	<script>window.jQuery || document.write('<//script src="js/jquery-1.7.2.min.js"><\/script>')</script>
 			
 	<!--tether for bootstrap		-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" 
@@ -161,19 +160,14 @@ WHERE	mandant = #session.mandant#
 			crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" ></script>
 	<cfoutput>
-		<script src='/#session.serverpath#/inc/yoxview/jquery.yoxview-2.21.min.js'></script>
+		
+		
 		<script src="/#session.serverpath#/js/jquery.flexslider-min.js"></script>
-<!--
-		<script type="text/javascript" charset="utf-8">
-			  $(window).load(function() {
-				$('.flexslider').flexslider();
-			  });
-			</script>
--->
+
 		<script src="/#session.serverpath#/js/scripts.js"></script>
 	</cfoutput>
 	
-	<!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID. -->
+	<!--- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID. --->
 	<!--- <script>
 	  var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
 	  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
