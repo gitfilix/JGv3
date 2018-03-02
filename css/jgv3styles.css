@@ -472,8 +472,6 @@ input:focus {
 */
 
 
-
-
 /*5.4. template 2 special (static) content styles ---------------
 /*-------------------------------------------------------------*/
 
@@ -496,6 +494,34 @@ input:focus {
 .specialcontent-pixbox .content-caption {
 	max-width: 400px;
 }
+
+
+
+/*5.5. Galleria syles ---------------------------------------------
+/*-------------------------------------------------------------*/
+
+
+
+/*
+
+.galleria-stage {
+    height: 600px;
+    position: absolute;
+    top: 10px;
+    bottom: 60px;
+    left: 10px;
+    right: 10px;
+    overflow: hidden;
+}
+
+
+*/
+
+
+
+
+
+
 
 /*6. Footer styles --------------------------------------------
 /*-------------------------------------------------------------*/

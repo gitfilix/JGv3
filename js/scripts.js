@@ -31,8 +31,8 @@ $(document).ready(function() {
 		    useCSS: true,
 		    keyboard: true,
 		    startAt: 0,
-			slideshowSpeed: 300, 
-			animationSpeed: 1200, 
+			slideshowSpeed: 4000, 
+			animationSpeed: 900, 
 			prevText: "&larr;",
 			nextText: "&rarr;",
 			selector: ".slides > .slide"
@@ -44,6 +44,23 @@ $(document).ready(function() {
 
 
 });
+
+//
+//	(function() { 
+//		Galleria.run('.galleria');
+//
+//		Galleria.configure({
+//			transition: 'fadeslide',
+//			transitionSpeed: 800,
+//			autoplay: 2500,
+//			carouselSpeed: 800,
+//			preload: true,
+//			imageCrop: true,
+//			height: 600,
+//			trueFullscreen: true,
+//			easing: 'galleriaOut'
+//		});
+//	}());
 //
 //(function() { 
 //            if (Galleria) { $("body").text('Galleria works') }

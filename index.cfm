@@ -118,8 +118,8 @@ WHERE	mandant = #session.mandant#
 	</cfoutput>
 
 	<!--- 3. CHANGE FAVICON HERE --->
-	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-	<link rel="shortcut icon" type="image/png" href="favicon.png">
+	<link rel="shortcut icon" type="image/x-icon" href="/dentaltechnik/favicon.ico">
+	<link rel="shortcut icon" type="image/png" href="/dentaltechnik/gasser_favicon.png">
 	
 	<!--- 4. INCLUDE external styles --->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"  />
@@ -127,15 +127,16 @@ WHERE	mandant = #session.mandant#
 
 	<cfoutput>
 	<link rel="stylesheet" href="/#session.serverpath#/js/FlexSlider/flexslider.css" type="text/css" />
+	<link rel="stylesheet" href="/#session.serverpath#/js/galleria/themes/classic/galleria.classic.css" />
 	<link rel="stylesheet" href="/#session.serverpath#/css/jgv3styles.css"  />
 	<link rel="stylesheet" href="/#session.serverpath#/css/mq-jgv3-styles.css"  />
-	<link rel="stylesheet" href="/#session.serverpath#/js/galleria/themes/classic/galleria.classic.css" />
 <!---		not minified --->
 	<!--- Javascript - jQuery --->
 	<script src="http://code.jquery.com/jquery.min.js"></script>
 
 	<script>window.jQuery || document.write('<//script src="js/jquery-1.7.2.min.js"><\/script>')</script>
 	<script src="/#session.serverpath#/js/galleria/galleria-1.5.7.js"></script>
+	<script src="/#session.serverpath#/js/galleria/themes/classic/galleria.classic.min.js"></script>	
 	</cfoutput>
 	<!---[if lt IE 9]>
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -146,7 +147,6 @@ WHERE	mandant = #session.mandant#
 <!--- Prompt IE 7 users to install Chrome Frame --->
 <!--[if lt IE 8]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 
-	<!---<cfinclude template="inc/template1.cfm" />--->
 	<!---load template 1 to 3--->
 	<cfoutput>
 		<!---<cfdump var="#pageProperties#"></cfdump>--->
