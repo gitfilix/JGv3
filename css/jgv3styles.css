@@ -10,6 +10,8 @@ font-family: 'Julius Sans One', sans-serif;*/
     font-family: 'Exo 2', sans-serif;
     color: #999;
     line-height: 2.8rem;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 .gray-1 {
@@ -66,27 +68,32 @@ font-family: 'Julius Sans One', sans-serif;*/
 
 .servicenav {
     font-family: 'Rajdhani', sans-serif;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     float: right;
-	font-weight: 300;
+	font-weight: 100;
+	margin-top: 2rem;
 }
 
 .servicenav li {
     display: inline;
-    padding-right: 1em;
+	margin-left: 1rem;
 }
 
 .servicenav a {
+	border-bottom: 1px solid #FFF;
+	padding-bottom: 1rem;
+    color: #666;
+    text-decoration:none;
     -moz-transition: all 0.3s ease-in;
     -webkit-transition: all 0.3s ease-in;
     transition: all 0.3s ease-in;
-    color: #666;
-    text-decoration:none;
 }
 
 .servicenav a:hover {
     color: #68b8de;
-    border-bottom: 1px solid #666;
+/*	border-bottom: 1px solid #68b8de;*/
+	padding-bottom: 0.2rem;
+    border-bottom: 1px solid #222;
     -moz-transition: all 0.3s ease-in;
     -webkit-transition: all 0.3s ease-in;
     transition: all 0.3s ease-in;
@@ -101,9 +108,9 @@ font-family: 'Julius Sans One', sans-serif;*/
 }
 
  /*active state*/
-.servicenav .active a{
-	color: #A33 !important;
-	border-bottom: #A33 1px solid;
+.servicenav .active a {
+	color: #68b8de;
+	border-bottom: #68b8de 1px solid;
 }
 
 
@@ -161,14 +168,16 @@ font-family: 'Julius Sans One', sans-serif;*/
 
 
 .subnav li {
-	padding-right: 0.5rem;
+	padding-right: 1rem;
     display: inline;
 	list-style-type: none;
 }
 
 .subnav a {
     text-decoration: none;
-	color:  #555;
+	color: #555;
+	border-top: 1px solid #FFF;
+	padding-top: 1.4rem;
     -moz-transition: all 0.4s ease-in;
     -webkit-transition: all  0.4s ease-in;
     transition: all  0.4s ease-in;
@@ -176,8 +185,10 @@ font-family: 'Julius Sans One', sans-serif;*/
 
 
 .subnav  a:hover {
+	border-top: 1px solid #68b8de;
+	padding-top: 0.2rem;
 	color: #68b8de;
-	-moz-transition: all 0.4s ease-in;
+	-moz-transition: all 0.2s ease-in;
 	-webkit-transition: all  0.2s ease-in;
 	transition: all  0.2s ease-in;
 }
@@ -192,8 +203,10 @@ font-family: 'Julius Sans One', sans-serif;*/
 }
 
 
-.subnav .active a {
-	color: #0A0 !important;
+.subnav .sub-active a {
+	color: #68b8de;
+	padding-top: 0.2rem;
+	border-top: 1px solid #68b8de;
 }
 
 
@@ -226,6 +239,9 @@ font-family: 'Julius Sans One', sans-serif;*/
 	line-height: 1.8rem;
 }
 
+.content-image {
+	box-shadow: 4px 4px 7px rgba(127, 143, 146, 0.66);
+}
 
 .content-caption {
 	background: #f9f9f9;
@@ -233,6 +249,28 @@ font-family: 'Julius Sans One', sans-serif;*/
     padding-left: 0.7rem;
     line-height: 1.8rem;
     border-left: 1px solid #AAA;
+
+}
+
+
+.content_link_pdf {
+	border: 1px solid #DEDEDE;	
+	padding: 3px;
+	border-radius: 3px;
+	box-shadow: 3px 3px 5px #666;
+}
+
+.content_link_pdf img {
+	max-width: 2rem;
+}
+
+.content_link_pdf a {
+	text-decoration: none;
+}
+
+.content_link_pdf a:hover {
+	padding-bottom: 0.3rem;
+	border-bottom: 	1px solid #0275d8;
 }
 
 
@@ -482,8 +520,9 @@ input:focus {
 
 
 .specialcontent-pixbox h4 {
-	font-size: 1.3rem;
+	font-size: 1.6rem;
 	color: #1c94c5;
+	margin-bottom: 1rem;
 }
 
 .specialcontent-textbox h3 {
@@ -493,6 +532,7 @@ input:focus {
 
 .specialcontent-pixbox .content-caption {
 	max-width: 400px;
+	color: #555;
 }
 
 
@@ -528,10 +568,11 @@ input:focus {
 
 
 .footer {
-    padding-top: 3rem;
-    border-top: 1px solid #999;
+	margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid #68b8de;
     color: #555;
-    background: #DEDEDE;
+/*    background: #EdEdEd;*/
 }
 
 
@@ -553,7 +594,8 @@ input:focus {
 
 .author a:hover {
     color: #FB9133;
-	background:#222;
+	background:#888;
+	padding: 3px;
     letter-spacing: 0.3em;
 	transition: all 0.2s linear, background 0.8s linear;
 }

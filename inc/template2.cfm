@@ -9,7 +9,7 @@
         <div class="row">
             <div class="col-md-2 col-lg-2 col-sm-2">
                <cfinclude template="logo.cfm" />
-				<strong>
+				<strong style="color: darkred;">
 					--Template -2--
 				</strong>
 				

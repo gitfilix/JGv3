@@ -31,7 +31,7 @@ $(document).ready(function() {
 		    useCSS: true,
 		    keyboard: true,
 		    startAt: 0,
-			slideshowSpeed: 4000, 
+			slideshowSpeed: 3000, 
 			animationSpeed: 900, 
 			prevText: "&larr;",
 			nextText: "&rarr;",
