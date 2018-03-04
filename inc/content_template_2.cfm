@@ -1,5 +1,5 @@
 <cfoutput query="getcontent">
-		<cfinclude template="sidebars.cfm">
+	<cfinclude template="sidebars.cfm">
 
 	<article class="content">
 		<header>
@@ -62,7 +62,7 @@
 		</cfif>
 		
 			
-	<!---<cfdump var="#getcontent#">--->
+	<cfdump var="#getcontent#">
 		 
 	</article>
 	</cfif> 

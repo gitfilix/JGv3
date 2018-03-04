@@ -1,3 +1,4 @@
+<cfprocessingdirective pageencoding="utf-8" />
 <cfoutput query="getFooter">
 	<div class="row">
 		<div class="col-sm-0  col-md-2 col-lg-2">
@@ -6,13 +7,12 @@
 		<div class="col-md-4 col-lg-4">
 		   	<address class="footertext">#adresse# - Tel: #telnummer# - e-Mail: <a href="mailto:#e_mail#">e-mail-kontakt</a></address>
 			
-			<br /> Kontaktaufnahme bitte via Formular.</address>
 		</div>
 		<div class="col-md-4 col-lg-4">
-			<p>
+			<h5>
 			Qualit&auml;tslabor in Winterthur	
-			</p>
-			<!---<cfinclude template="servicenav.cfm">--->
+			<h5/>
+			<cfinclude template="footernav.cfm">
 		</div>	
 		<div class="col-sm-0 col-md-2 col-lg-2">
 			<span class="author">

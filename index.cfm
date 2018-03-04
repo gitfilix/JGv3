@@ -37,6 +37,16 @@ SELECT 	* FROM pages
 WHERE 	parentid = #listFirst(session.navtree)# AND isactive = 1 
 ORDER	BY navorder
 </cfquery>
+<!--- get FOOTER-nav oberstes level --->
+<cfquery name="getFooterNav" datasource="#application.dsn#">
+SELECT * FROM pages
+WHERE 	navpos = 2
+		AND parentid = 0 
+		AND isactive = 1 
+		AND mandant =#session.mandant#
+		AND lang ="#session.lang#"
+ORDER 	BY navorder
+</cfquery>
 <!--- get inhalte --->
 <cfquery name="getcontent" datasource="#application.dsn#">
 SELECT 	* FROM content
