@@ -20,7 +20,7 @@
 			<div class="col-sm-12 col-md-6 col-lg-6">
 				<!--- Print out Fliesstext --->
 				<cfif fliesstext NEQ "" AND fliesstext NEQ "<br>">
-						<section class="content-text">#fliesstext#</section>
+						<div class="content-text">#fliesstext#</div>
 				</cfif>
 				<cfif href NEQ "">
 					<br/>
@@ -40,7 +40,7 @@
 				 <cfif bildname NEQ "">
 					<figure class="content-image">
 						<img src="/#session.serverpath#/upload/img/#bildname#" alt="alt tag" class="img-fluid" >
-						<div class="content-caption"><caption >#IMAGECAPTION#</caption></div>
+						<figcaption class="content-caption">#IMAGECAPTION#</figcaption>
 					</figure> 
 				</cfif>
 			</div>

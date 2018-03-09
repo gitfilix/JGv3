@@ -7,7 +7,7 @@
 		     <div class="slides">
 			  	<cfoutput query="getHeaderPanels">
 			  <div class="slide">
-			  	<img src="/#session.serverpath#/upload/img/headerpanel/#image#" />
+			  	<img src="/#session.serverpath#/upload/img/headerpanel/#image#" alt="gasser zahntechnik: #TITEL#" />
 			   	<div class="headerpannelbox">
 					<h3>#TITEL#</h3>
 					<div class="slidertext">#FLIESSTEXT#</div>

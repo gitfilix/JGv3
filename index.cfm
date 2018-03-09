@@ -116,14 +116,12 @@ WHERE	mandant = #session.mandant#
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <!--	<meta name="robots" content="index,follow">-->
 <!--	<meta name="revisit-after" content="30 days">	-->
-	<!--- 1. CHANGE CONTENT Description HERE --->
-	<meta name="description" content="Gasser Zahntechnik | Dentallabor">	
 	<!--- push meta-tags dynamicly into html-head section --->
 	<cfoutput>
 	<cfhtmlhead text='
 	<meta name="description" content="#pageProperties.metaDesc#">
 	<meta name="keywords" content="#pageProperties.metaKeys#">
-	<title>Gasser Zahntechnik | #pageProperties.metaTitel# | Dentallabor Winterthur</title>
+	<title>Gasser Zahntechnik #pageProperties.metaTitel# | Dentallabor Winterthur</title>
 	' />		
 	</cfoutput>
 
@@ -133,7 +131,7 @@ WHERE	mandant = #session.mandant#
 	
 	<!--- 4. INCLUDE external styles --->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"  />
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo+2:200|Julius+Sans+One|Rajdhani" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo+2:200%7CJulius+Sans+One%7CRajdhani" />
 
 	<cfoutput>
 	<link rel="stylesheet" href="/#session.serverpath#/js/FlexSlider/flexslider.css" type="text/css" />

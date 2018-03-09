@@ -10,8 +10,8 @@
 		</div>
 		<div class="col-md-4 col-lg-4">
 			<h5>
-			Qualit&auml;tslabor in Winterthur	
-			<h5/>
+			Qualitätslabor in Winterthur	
+			</h5>
 			<cfinclude template="footernav.cfm">
 		</div>	
 		<div class="col-sm-0 col-md-2 col-lg-2">
