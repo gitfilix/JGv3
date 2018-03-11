@@ -10,7 +10,7 @@
 @media screen and (max-width: 1024px){
 	body{
 		/*blau*/
-		/*background:#33F;*/
+		background:#33F;
 	}
 
 	#inner-wrap{
@@ -26,13 +26,13 @@
 	/*Service nav is horizontally */
 	.servicenav ul li{
 		font-size:1em;
-		width:8em;
-		display:block;
+		width: 8em;
+		display: inline;
 		padding-top: 1.4em;
-		margin-bottom:0.5em;
 		color:#111;
-		padding:0.5em;
+		padding: 0.3em;
 		border: 1px solid #999;
+		border-radius: 3px;
 	}
 	
 	.servicenav ul li a:link{

@@ -8,11 +8,7 @@
 		</div>	
         <div class="row">
             <div class="col-md-2 col-lg-2 col-sm-2">
-               <cfinclude template="logo.cfm" />
-				<strong style="color: darkred;">
-					--Template -2--
-				</strong>
-				
+               <cfinclude template="logo.cfm" />			
             </div>
             <div class="col-md-10 col-lg-10 col-sm-10">
             	<cfinclude template="themennav.cfm" />

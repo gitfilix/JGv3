@@ -34,6 +34,9 @@ font-family: 'Julius Sans One', sans-serif;*/
 .logo{
     margin-left: 4rem;
 }
+.logo a:hover {
+	text-decoration: none;
+}
 
 .logo img {
     max-width: 75px;
@@ -42,10 +45,12 @@ font-family: 'Julius Sans One', sans-serif;*/
 
 .logo h3{
 	font-size: 1.2rem;
-	color: #888;
+	color: #333;
+	transition: all 0.2s ease-out;
 }
 
 .logo h3:hover{
+/*	text-decoration: none;*/
 	color: #68b8de;
 	transition: all 0.2s ease-out;
 }
@@ -324,18 +329,22 @@ input:focus {
 }
 
 .webform {
-	background:#e7e7e7;
-	border-bottom: 1px solid #999;
+	margin-top: 2rem;
+	background: #efefef;
+	color:#444444;
+	border-top: 1px solid #68b8de;
 	padding-bottom: 2em;
 	padding-left: 0;
 	font-family: 'Exo 2', sans-serif;
-	font-size:  1rem;
-	color:#333;
+	font-size:  1.2rem;
+	line-height: 1.6rem;
 }
 
 .webform h2 {
 	font-family: 'Exo 2', sans-serif;
-	font-size: 1rem;
+	font-size: 1.2rem;
+	line-height: 1.6rem;
+	color:#333;
 	}
 
 .webform li {
@@ -346,7 +355,7 @@ input:focus {
 	font-family: 'Exo 2', sans-serif;
 	font-weight:200;
 	height: 2.4em;
-	width:60%;
+	width: 70%;
 	margin:0;
 	border:#999 1px solid;
 	background:#F9F9F9;
@@ -356,9 +365,10 @@ input:focus {
 
 
 .webform input:focus {
-	background:#DDFFFD;
+	background:#e2f2ff;
 	color:#111;
 	border:#111 1px solid;
+	font-weight: bolder;
 	-moz-transition:all 0.3s linear;
 	-webkit-transition:all  0.3s linear;
 	transition:all  0.3s linear;
@@ -368,9 +378,9 @@ input:focus {
 
 .webform textarea {
 	font-family: 'Exo 2', sans-serif;
-	font-weight:200;
-	width: 62%;
-	max-width:62%;
+	font-weight: bolder;
+	width: 90%;
+	max-width: 90%;
 	margin:0;
 	background:#F9F9F9;
 	display:block;
@@ -388,7 +398,7 @@ input:focus {
 	-moz-transition:all 0.3s linear;
 	-webkit-transition:all  0.3s linear;
 	transition:all  0.3s linear;
-	background: #DDFFFD;
+	background: #e2f2ff;
 	color: #111;
 	border:#111 1px solid;
 	outline-width: 0;
@@ -413,18 +423,18 @@ input:focus {
 	width:62%;
 	border: #111 1px solid;
 	color:#777;
-	font-weight: 200;
+	font-weight: bolder;
 	letter-spacing:0.05em;
 	-moz-transition: all 0.2s linear;
 	-webkit-transition: all  0.2s linear;
 	transition: all 0.2s linear;
-	}
+}
 
 #submit-btn:hover {
 	border: #2A74E5 1px solid;
 	color: #111;
-	background: #68b8de;
-	}
+	background: #e2f2ff;
+}
 
 
 /*5.3 flexslider Custom styles --------------------------------*/
@@ -473,6 +483,7 @@ input:focus {
 	bottom: 1rem;
 	right: 1rem;
 	padding: 0.2rem 1.5rem;
+	letter-spacing: 1px;
 	color: #F3F3F3;
 	border: 1px solid #FFF;
 	border-radius: 4px;
@@ -569,12 +580,39 @@ input:focus {
 
 .footer {
 	margin-top: 4rem;
+	margin-bottom: 2rem;
     padding-top: 2rem;
     border-top: 1px solid #68b8de;
     color: #555;
-/*    background: #EdEdEd;*/
 }
 
+.footernav {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 0.9rem;
+	font-weight: 100;
+}
+
+.footernav li {
+    display: inline;
+}
+
+.footernav a {
+	border-bottom: 1px solid #FFF;
+    color: #666;
+    text-decoration:none;
+    -moz-transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+
+.footernav a:hover {
+    color: #68b8de;
+	padding-bottom: 0.2rem;
+    border-bottom: 1px solid #222;
+    -moz-transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
 
 /*6.1 Webkanal link styles --------------------------------------------*/
 .author {

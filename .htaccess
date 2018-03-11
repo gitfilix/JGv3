@@ -1,6 +1,6 @@
 
 RewriteEngine on
-RewriteBase /felix
+RewriteBase /dentaltechnik
 
 
 # remove index.cfm from root

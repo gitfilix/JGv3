@@ -10,7 +10,7 @@
 @media screen and (max-width: 1024px){
 	body {
 		/*blau*/
-/*		background:#33F;*/
+		background: #C59191;
 	}
 
 
@@ -21,13 +21,13 @@
 	/*Service nav is horizontally */
 	.servicenav ul li{
 		font-size:1em;
-		width:8em;
-		display:block;
+		width: 8em;
+		display: inline;
 		padding-top: 1.4em;
-		margin-bottom:0.5em;
 		color:#111;
-		padding:0.5em;
+		padding: 0.3em;
 		border: 1px solid #999;
+		border-radius: 3px;
 	}
 	
 	.servicenav ul li a:link{
@@ -138,19 +138,42 @@
 /*mobile */
 @media screen and (max-width: 768px) {
 	body {
-/*		background: #A33;*/
+		background: #FFF;
+	}
+	
+	.global {
+		line-height: 2rem;
 	}
 	
 	.logo {
 		margin-left: 0;
 	}
 	
+	.logo img {
+		max-width: 90px;
+	}
+	
+	.themennav {
+		font-size: 1.5rem;
+	}
 	.themennav ul{
 		padding-left: 0px;
 	}
 	
+	.themennav li {
+		display: block;
+		text-align: right;
+		margin-right: 0;
+		margin-bottom: 0.5rem;
+	}
+	
+	
 	.subnav ul {
 		padding-left: 10px;
+	}
+	.subnav a {
+		border-top: 0;
+		padding-top: 0;
 	}
 	
 	.sub-active {
@@ -169,6 +192,7 @@
 		font-size: 1.1rem;
 		line-height: 1.2rem;
 		margin-bottom: 0.2rem;
+		display: none;
 	} 
 
 	.headerpannelbox {
@@ -181,10 +205,23 @@
 		display: none;
 	}
 	
+	.supertitle {
+		font-size: 2.1rem;
+	}
 	
 	
 	.spacerow {
 		padding-bottom: 1rem;
+	}
+	
+	.footer{
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+		padding-top: 1rem;
+	}
+	
+	.footernav {
+		text-align: right;
 	}
 }
 

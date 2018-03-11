@@ -17,7 +17,7 @@
 		
 		<cfmail type="html" from="#form.contactsender#" to="#form.contactReciever#" subject="#form.contactsubject#" replyto="kuenstlername@gmail.com" wraptext="120">
 <strong>Lieber Jan,</strong> ein Formular wurde von deiner neuen schönen Website übermittelt:<br/>
-Folgende Felder waren im POST Request:<br/>
+<br/>
 <br/>
 <table width="400">
 <tr>
@@ -25,7 +25,7 @@ Folgende Felder waren im POST Request:<br/>
 	<td>#form.contactname#</td>
 </tr>
 <tr>
-	<td>Kontaktadresse Email:</td>
+	<td>Kontaktadresse:</td>
 	<td>#form.contactmail#</td>
 </tr>
 
@@ -50,14 +50,13 @@ contentid="logo"
 disposition="inline"
 /> 
 --->
-<!---<img src="cid:girl" width="350" height="261" alt="" /><br />--->
 </p>
   
 
 <br/>
 <br/>
 -------------------------------------------------------------------------------------<br/>
-webkanal service #year(now())# - <a href="http://www.web-kanal.ch">ww.webkanal.ch</a><br/>
+gasser web service #year(now())# - <a href="http://www.zahntechnik-gasser.ch/dentaltechnik" >www.zahntechnik-gasser.ch</a><br/>
 <br/>
 <br/>
 
@@ -66,14 +65,14 @@ webkanal service #year(now())# - <a href="http://www.web-kanal.ch">ww.webkanal.c
 <!--- <cfoutput query="getcontent">
 		#contactThanks#<br>
 </cfoutput>	 --->
-	<br /><br />
 	<h2>Danke für Ihre Kontaktaufnahme.</h2>	
-	<br /><br /><br />
-	ich werde mich bei Ihnen zurückmelden. <br />
-	Freundliche Grüsse <br />
-	<h3>Jan Gasser</h3>
-	
-	
+	<br />
+	<p>
+		ich werde mich bei Ihnen zurückmelden. <br />
+		Freundliche Grüsse <br />
+		Jan Gasser				
+	</p>
+				
 	<cfelse>
 	<h2>Es ist ein Fehler aufgetreten.</h2> <br/>
 	<p>Bitte akzeptieren Sie die AGB's	</p>.

@@ -11,7 +11,7 @@ function submitContactForm(){
 	// from send
 	$('#kontaktformular').fadeOut(1000,function(){
 		<!--- 1. CHECK HERE path is correct --->
-		$.post('/photography/inc/sendContact.cfm?formSubmited=true', $('#kontaktformular').serialize(),function(data){
+		$.post('/dentaltechnik/inc/sendContact.cfm?formSubmited=true', $('#kontaktformular').serialize(),function(data){
 			$('#kontaktformular').before('<span id="thx">'+data+'</span>');
 			if(data.indexOf('Danke')>-1){
 				$('#kontaktformular').remove();
@@ -32,7 +32,7 @@ function submitContactForm(){
 	</cfoutput>
 	<cfoutput>
 	<div class="webform">
-	<h2>Ihre Daten werden vertraulich behandelt</h2>
+	<!---	<h2>Kontakt mit Zahnlabor Gasser</h2> --->
 	<form action="javascript:submitContactForm();void(0);" method="post" enctype="multipart/form-data" class="forms columnar" id="kontaktformular" >
 		<fieldset>
 		<ul> 
@@ -47,7 +47,7 @@ function submitContactForm(){
 			</li>
 			<li>
               <section><label class="bold" for="contactmessage">Nachricht</label></section>
-              <textarea class="width-50" style="height: 100px;" id="contactmessage" name="contactmessage" placeholder="Text"></textarea>
+              <textarea style="height: 250px;" id="contactmessage" name="contactmessage" placeholder="Text"></textarea>
             </li>
 			<li>
 				<fieldset class="captcha" style="background:none;border:0;padding:0;margin:0;font-size:0;line-height:0;"> </fieldset>
@@ -57,7 +57,7 @@ function submitContactForm(){
 			</li>
 			 <li class="push">
 			 	<div class="response"></div>
-                <input type="submit" class="btn" id="submit-btn" name="Kontaktsenden" value="Senden" />
+                <input type="submit" class="btn" id="submit-btn" name="Kontaktsenden" value="Nachricht Senden" />
 				<!--- Hiddenfilds zum contact-/ reciever adressen übergeben --->
 				<input type="hidden" name="contactReciever" value="#contactReciever#">
 				<input type="hidden" name="contactsender" value="#contactsender#">
@@ -72,6 +72,7 @@ function submitContactForm(){
 		<br />
 		<br />
 		<br />
+<!---
 		<div class="content">
 			<h2>
 			contactreciever is: #CONTACTRECIEVER# <br />	
@@ -80,6 +81,7 @@ function submitContactForm(){
 			</h2>
 			
 		</div>
+--->
 	
 	</cfoutput>
 	

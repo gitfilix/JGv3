@@ -135,7 +135,7 @@ WHERE	mandant = #session.mandant#
 
 	<cfoutput>
 	<link rel="stylesheet" href="/#session.serverpath#/js/FlexSlider/flexslider.css" type="text/css" />
-	<link rel="stylesheet" href="/#session.serverpath#/js/galleria/themes/classic/galleria.classic.css" />
+	<link rel="stylesheet" href="/#session.serverpath#/js/galleria/themes/classic/galleria.classic.min.css" />
 	<link rel="stylesheet" href="/#session.serverpath#/css/jgv3styles.css"  />
 	<link rel="stylesheet" href="/#session.serverpath#/css/mq-jgv3-styles.css"  />
 <!---		not minified --->
@@ -157,30 +157,30 @@ WHERE	mandant = #session.mandant#
 
 	<!---load template 1 to 3--->
 	<cfoutput>
-		<!---<cfdump var="#pageProperties#"></cfdump>--->
+	<!---<cfdump var="#pageProperties#"></cfdump>--->
 	<cfinclude template="inc/template#pageProperties.template#.cfm" />
 	
 	</cfoutput>
 			
-	<!--tether for bootstrap		-->
+	<!--tether for bootstrap	-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" 
 			integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" 
 			crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" ></script>
-	<cfoutput>
-		
-		
+	<cfoutput>	
 		<script src="/#session.serverpath#/js/jquery.flexslider-min.js"></script>
-
 		<script src="/#session.serverpath#/js/scripts.js"></script>
 	</cfoutput>
-	
-	<!--- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID. --->
-	<!--- <script>
-	  var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-	  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-	  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-	  s.parentNode.insertBefore(g,s)}(document,'script'));
-	</script> --->
+
+	<!--- Global site tag (gtag.js) - Google Analytics --->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-38956798-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-38956798-1');
+	</script>
+
 	</body>
 </html>

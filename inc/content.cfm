@@ -15,33 +15,31 @@
 		</header>
 		<!---alternative view if Bildbreite = volle breite--->
 		<cfif IMAGEPOS EQ 2>
-				<h2>--- Vouuu breit!---</h2>
-				<div class="row">
-					<div class="col-sm-12 col-md-12 col-lg-12">
-						<!--- Show Content Image --->
-						 <cfif bildname NEQ "">
-							<figure class="content-image">
-								<img src="/#session.serverpath#/upload/img/#bildname#" alt="#bildname#" class="img-fluid" >
-								<figcaption class="content-caption">#IMAGECAPTION#</figcaption>
-							</figure> 
-						</cfif>
-					</div>
+			<div class="row">
+				<div class="col-sm-12 col-md-12 col-lg-12">
+					<!--- Show Content Image --->
+					 <cfif bildname NEQ "">
+						<figure class="content-image">
+							<img src="/#session.serverpath#/upload/img/#bildname#" alt="#bildname#" class="img-fluid" >
+							<figcaption class="content-caption">#IMAGECAPTION#</figcaption>
+						</figure> 
+					</cfif>
 				</div>
-				<div class="row">
-					<div class="col-sm-8 col-md-12 col-lg-12">
-						<!--- Print out Fliesstext --->
-						<cfif fliesstext NEQ "" AND fliesstext NEQ "<br>">
-								<div class="content-text">#fliesstext#</div>
-						</cfif>
-						<cfif href NEQ "">
-							<div class="content_link" >
-								<a class="content_link" href="#href#" target="_blank">
-									#hreflabel#
-								</a>
-							</div>
-						</cfif>
-					</div>		
-				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-8 col-md-12 col-lg-12">
+					<!--- Print out Fliesstext --->
+					<cfif fliesstext NEQ "" AND fliesstext NEQ "<br>">
+							<div class="content-text">#fliesstext#</div>
+					</cfif>
+					<cfif href NEQ "">
+						<div class="content_link" >
+							<a class="content_link" href="#href#" target="_blank">
+								#hreflabel#
+							</a>
+						</div>
+					</cfif>
+				</div>		
 			</div>
 			<!--- default view template 1--->
 			<cfelse>

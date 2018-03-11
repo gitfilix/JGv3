@@ -1,5 +1,5 @@
 <cfprocessingdirective pageencoding="utf-8" />
-<ul>
+<ul class="footernav">
 	<cfoutput query="getFooterNav">
 	<li>
 		<a href="#trim(application.com.nav.rewriteLinkById(id=id,lang=lang))#">

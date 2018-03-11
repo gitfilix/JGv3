@@ -3,13 +3,9 @@
 
 	<article class="content">
 		<header>
-			<!--- Print a Title --->	
 			<cfif titel NEQ "">
-				content template 2
 				<h1 class="h2 supertitle">#titel#</h1>
 			</cfif>
-			
-			<!---  PRint the lead --->
 			<cfif lead NEQ "">
 				 	<h2 class="h3">#lead#</h2>
 			<cfelse>
@@ -62,7 +58,7 @@
 		</cfif>
 		
 			
-	<cfdump var="#getcontent#">
+<!---	<cfdump var="#getcontent#">--->
 		 
 	</article>
 	</cfif> 
