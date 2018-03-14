@@ -596,16 +596,17 @@ input:focus {
     display: inline;
 }
 
-.footernav a {
+.footernav a, .footertext a {
 	border-bottom: 1px solid #FFF;
-    color: #666;
+    color: #000;
+	font-weight: 500;
     text-decoration:none;
     -moz-transition: all 0.3s ease-in;
     -webkit-transition: all 0.3s ease-in;
     transition: all 0.3s ease-in;
 }
 
-.footernav a:hover {
+.footernav a:hover , .footertext a:hover{
     color: #68b8de;
 	padding-bottom: 0.2rem;
     border-bottom: 1px solid #222;

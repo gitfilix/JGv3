@@ -2,7 +2,6 @@
 RewriteEngine on
 RewriteBase /dentaltechnik
 
-
 # remove index.cfm from root
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
