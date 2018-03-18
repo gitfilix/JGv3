@@ -9,11 +9,11 @@
 /*@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape) {*/
 @media screen and (max-width: 1024px){
 	body {
-		/*blau*/
 /*		background: #C59191;*/
 	}
 
-
+	
+	
 
 /*1. Service Navigation  ----------------------------------------*/
 /*---------------------------------------------------------------*/
@@ -112,22 +112,22 @@
 
 	.webform input{
 		height: 2.6em;
-		width:80%;
+		width: 80%;
 		margin:0;
 	}
 
 	.webform textarea{
-		width:82%;
-		max-width:82%;
-		margin:0;
+		width: 80%;
+		max-width: 80%;
+		margin: 0;
 		resize: none;
   		overflow: auto;
 	}
 	
 	#submit-btn{
-		font-weight:200;
-		letter-spacing:0.1em;
-		width:82%;
+		font-weight: 200;
+		letter-spacing: 0.1em;
+		width: 80%;
 	}	
 	
 
@@ -135,26 +135,47 @@
 }
 
 
-/*mobile */
-@media screen and (max-width: 768px) {
+/* mobile */
+/*up to iphone x */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+		
 	body {
-		background: #FFF;
+/*		background: #9FEFF0;*/
 	}
 	
 	.global {
 		line-height: 2rem;
 	}
 	
+	#secondrow .logo {
+		display: none;
+		
+	}
+	
+	#firstrow .logo {
+		margin-top: 1rem;
+		display: inline-block;
+	}
+	
+	
 	.logo {
 		margin-left: 0;
 	}
 	
 	.logo img {
-		max-width: 90px;
+		max-width: 70px;
 	}
 	
+	.servicenav {
+		margin-top: -4rem;
+		 
+	 }
+	 
 	.themennav {
-		font-size: 1.5rem;
+		font-size: 1.3rem;
 	}
 	.themennav ul{
 		padding-left: 0px;
@@ -209,7 +230,10 @@
 		font-size: 2.1rem;
 	}
 	
-	
+	  iframe {
+		  width: 100%;
+	  }
+	  
 	.spacerow {
 		padding-bottom: 1rem;
 	}
@@ -223,5 +247,7 @@
 	.footernav {
 		text-align: right;
 	}
+	  
+	  
 }
 

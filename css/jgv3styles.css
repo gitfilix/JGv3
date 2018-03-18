@@ -3,15 +3,16 @@
 font-family: 'Exo 2', sans-serif;
 font-family: 'Julius Sans One', sans-serif;*/
 
-/* =Typography
+/* =Typography - I like Typo and Retina displays say thank you
 -----------------------------------------------------------------*/
 
 .global{
     font-family: 'Exo 2', sans-serif;
     color: #999;
     line-height: 2.8rem;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility !important;
+	-webkit-font-smoothing: antialiased !important;
+	-moz-osx-font-smoothing: grayscale !important; 
 }
 
 .gray-1 {
@@ -62,11 +63,14 @@ font-family: 'Julius Sans One', sans-serif;*/
     font-weight: 200;
     font-size: 2.4rem;
     line-height: 3.2rem;
-    text-rendering: geometricPrecision;
     text-shadow: 3px 3px #EdEdEd;
     letter-spacing: 0.1rem;
 }
 
+/*show logo second row on desktop*/
+#firstrow .logo {
+	display: none;
+}
 
 /* SERVICE Nav styles -------------------------------------------*/
 /*---------------------------------------------------------------*/
@@ -126,7 +130,6 @@ font-family: 'Julius Sans One', sans-serif;*/
     font-family: 'Exo 2', sans-serif;
     font-size: 1.3rem;
 	font-weight: 300;
-	text-rendering: optimizeLegibility;
 }
 
 .themennav li {
@@ -168,7 +171,6 @@ font-family: 'Julius Sans One', sans-serif;*/
     font-family: 'Exo 2', sans-serif;
     font-size: 1.1rem;
 	font-weight: 200;
-	text-rendering: optimizeLegibility;
 }
 
 
@@ -459,7 +461,6 @@ input:focus {
 .headerpannelbox h3 {
 	font-family: "Julius Sans One", sans-serif;
     font-weight: 200;
-    text-rendering: geometricPrecision;
 	color: #68b8de;
     font-size: 4.4rem;
     line-height: 5.2rem;
@@ -472,7 +473,6 @@ input:focus {
 	font-weight: 100 !important;
 	padding-top: 0;
 	padding-left: 3rem;
-	text-rendering: geometricPrecision;
 	font-size: 1.4rem;
 	line-height: 2.4rem;
 	color: #F3F3F3;
@@ -551,23 +551,27 @@ input:focus {
 /*5.5. Galleria syles ---------------------------------------------
 /*-------------------------------------------------------------*/
 
-
-
-/*
-
-.galleria-stage {
-    height: 600px;
-    position: absolute;
-    top: 10px;
-    bottom: 60px;
-    left: 10px;
-    right: 10px;
-    overflow: hidden;
+.galleria-theme-classic .galleria-info-link {
+	width: 40px;
+    height: 40px;
 }
 
 
-*/
+.galleria-theme-classic .galleria-info-title {
+	background: rgba(56,98,128,0.75);
+	font-family: 'Exo 2', sans-serif;
+	font-size: 1.4rem;
+	line-height: 1.6rem;
+}
 
+
+
+.galleria-theme-classic .galleria-info-description {
+	font-family: 'Exo 2', sans-serif;
+	font-size: 1.2rem;
+	line-height: 1.6rem;
+	
+}
 
 
 
@@ -590,6 +594,7 @@ input:focus {
     font-family: 'Rajdhani', sans-serif;
     font-size: 0.9rem;
 	font-weight: 100;
+	padding-left: 0;
 }
 
 .footernav li {
@@ -598,7 +603,7 @@ input:focus {
 
 .footernav a, .footertext a {
 	border-bottom: 1px solid #FFF;
-    color: #000;
+    color: #68b8de;
 	font-weight: 500;
     text-decoration:none;
     -moz-transition: all 0.3s ease-in;
@@ -607,7 +612,7 @@ input:focus {
 }
 
 .footernav a:hover , .footertext a:hover{
-    color: #68b8de;
+    color: #0275d8;
 	padding-bottom: 0.2rem;
     border-bottom: 1px solid #222;
     -moz-transition: all 0.3s ease-in;

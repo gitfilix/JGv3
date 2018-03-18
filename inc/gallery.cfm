@@ -6,26 +6,24 @@ SELECT A.id as albumid, A.Albumtitle,A.albumdescription,I.*
 FROM	albums A LEFT JOIN albumimages I ON I.albumID = A.id
 WHERE A.id = <cfif isdefined("getActivePage.albumid")>#getActivePage.albumid#<cfelse>#albumid#</cfif>
 </cfquery>
-
-	<script type="text/javascript">
+	<script >
 		(function() { 
 			Galleria.run('.galleria');
 
 			Galleria.configure({
 				transition: 'fadeslide',
 				transitionSpeed: 800,
-				autoplay: 2500,
-				carouselSpeed: 800,
+				autoplay: 3000,
+				carouselSpeed: 1500,
 				preload: true,
 				imageCrop: true,
 				height: 600,
+				showInfo: true,
 				trueFullscreen: true,
 				easing: 'galleriaOut'
 			});
 		}());
 	</script>
-	
-
 
 <cfif getAlbumWithImages.imagePath NEQ "">
 
@@ -34,17 +32,13 @@ WHERE A.id = <cfif isdefined("getActivePage.albumid")>#getActivePage.albumid#<cf
 		<h3>#albumtitle#</h3>
 	</cfif>
 
-
 	<!---<cfdump var="#albumid#" ></cfdump>--->
-
 	<cfif isdefined("getActivePage.albumid")>
 		<cfset albumtype = getActivePage.albumtype />
 	<cfelse>
 		<cfset albumtype = getContent.albumtype />
 	</cfif>
-
 	<!--- hier der template switch zwischen thumbnail-liste und vollem album --->
-
 	<!--- thumbnail-liste --->
 	<cfif albumtype EQ 1>
 		<cfoutput>
@@ -89,7 +83,7 @@ WHERE A.id = <cfif isdefined("getActivePage.albumid")>#getActivePage.albumid#<cf
 			<h4>#albumdescription#</h4>
 		</cfif>
 
-	</cfif>
+	</cfif>	
 	<br/>
 
 	</cfoutput>

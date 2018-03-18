@@ -1,12 +1,16 @@
 <cfprocessingdirective pageencoding="utf-8" />
 <div class="global">
 	<div class="container-fluid">
-		<div class="row">
-			<div class="col-sm-12 col-md-12 col-lg-12">
+		<div class="row" id="firstrow">
+			<div class="col-sm-6 col-md-6 col-lg-6">
+				<cfinclude template="logo.cfm" />
+				&nbsp;
+            </div>
+			<div class="col-sm-6 col-md-6 col-lg-6">
 				<cfinclude template="servicenav.cfm">
 			</div>
 		</div>	
-        <div class="row">
+        <div class="row" id="secondrow">
             <div class="col-md-2 col-lg-2 col-sm-2">
                <cfinclude template="logo.cfm" />
             </div>

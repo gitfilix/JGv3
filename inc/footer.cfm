@@ -8,8 +8,8 @@
 			<address class="footertext">#adresse# |  <br />Tel: <a href="tel:0522137171" >#telnummer# </a> | e-Mail: <a href="mailto:#e_mail#">kontakt -adresse</a></address>
 		</div>
 		<div class="col-md-4 col-lg-4">
-			<quote>Qualitätslabor in Winterthur</quote>
-			<cfinclude template="footernav.cfm">
+			<blockquote class="text-justify">Qualitätslabor in Winterthur</blockquote>
+			<cfinclude template="footernav.cfm" />
 		</div>	
 		<div class="col-sm-0 col-md-2 col-lg-2">
 			<span class="author">
